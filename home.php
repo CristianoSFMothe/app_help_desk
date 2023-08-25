@@ -9,13 +9,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/style.css" />
-
 </head>
 
 <body>
 
   <nav class="navbar navbar-dark bg-dark">
-    <a class="header navbar-brand" href="#">
+    <a class="navbar-brand" href="#">
       <img src="./assents/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
       App Help Desk
     </a>
@@ -24,21 +23,20 @@
   <div class="container">
     <div class="row">
 
-      <div class="card-login">
+      <div class="card-home">
         <div class="card">
-          <div id="form-login" class="card-header">
-            Login
+          <div class="card-header">
+            Menu
           </div>
           <div class="card-body">
-            <form>
-              <div class="form-group">
-                <input name="email" type="email" class="form-control" placeholder="E-mail">
+            <div class="row">
+              <div class="col-6 d-flex justify-content-center">
+                <img src="./assents/img/formulario_abrir_chamado.png" width="70" height="70">
               </div>
-              <div class="form-group">
-                <input name="password" type="password" class="form-control" placeholder="Senha">
+              <div class="col-6 d-flex justify-content-center">
+                <img src="./assents/img/formulario_consultar_chamado.png" width="70" height="70">
               </div>
-              <button name="btnSubmit" class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
-            </form>
+            </div>
           </div>
         </div>
       </div>
