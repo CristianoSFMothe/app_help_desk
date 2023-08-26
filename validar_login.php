@@ -1,11 +1,13 @@
 <?php
 
+session_start();
+
 //VARIAVEL QUE VERIFICA SE A AUTENTICAÇÃO FOI REALIZADA
 $usuario_autenticado = false;
 
 //USUARIOS DO SISTEMA
 $usuarios_app = array(
-    array('email' => 'adm@admin.com.br', 'password' => 'admin')
+    array('email' => 'adm@admin.com', 'password' => 'admin')
 );
 
 foreach($usuarios_app as $user){
@@ -15,8 +17,10 @@ foreach($usuarios_app as $user){
 }
 
     if($usuario_autenticado){
-        echo 'Usuário autenticado.';
+        echo 'Usuário autenticado';
+        $_SESSION['autenticado'] = 'SIM';
     }else{
+        $_SESSION['autenticado'] = 'NAO';
         header('Location: index.php?login=erro');
     }
 
